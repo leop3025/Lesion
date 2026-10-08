@@ -1,0 +1,30 @@
+# Large dataset / medical images
+data/
+preprocessed/
+model_input/
+distance_labels/
+
+*.nii
+*.nii.gz
+*.7z
+*.zip
+
+# Model checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Generated files
+output/
+logs/
+structure_reports/
+splits/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/

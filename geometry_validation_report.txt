@@ -1,0 +1,408 @@
+================================================================================
+MS3SEG GEOMETRY VALIDATION REPORT
+================================================================================
+
+Total patients: 100
+Passed: 0
+Failed: 100
+
+Patient 001: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 002: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 003: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 004: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 005: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 006: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 007: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 008: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 009: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 010: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 011: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 012: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 013: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 014: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 015: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 016: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 017: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 018: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 019: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 020: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 021: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 022: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 023: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 024: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 025: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 026: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 027: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 028: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 029: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 030: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 031: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 032: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 033: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 034: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 035: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 036: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 037: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 038: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 039: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 040: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 041: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 042: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 043: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 044: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 045: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 046: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 047: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 048: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 049: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 050: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 051: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 052: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 053: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 054: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 055: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 056: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 057: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 058: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 059: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 060: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 061: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 062: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 063: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 064: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 065: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 066: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 067: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 068: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 069: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 070: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 071: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 072: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 073: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 074: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 075: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 076: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 077: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 078: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 079: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 080: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 081: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 082: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 083: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 084: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 085: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 086: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 087: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 088: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 089: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 090: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 091: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 092: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 093: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 094: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 095: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 096: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 097: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 098: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 099: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
+Patient 100: FAIL
+  - ventricle mask is not binary: [0.0, 0.9999999997671694]
+  - nWMH mask is not binary: [0.0, 254.9999999406282]
+  - abWMH mask is not binary: [0.0, 254.9999999406282]
