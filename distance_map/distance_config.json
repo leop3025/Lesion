@@ -1,0 +1,24 @@
+{
+  "D_max_mm": 35.0,
+  "p99_lesion_distance_mm": 32.13643264770508,
+  "selection": "99th percentile of abWMH voxel distance, development 70 only, rounded up to 5 mm",
+  "n_dev_lesion_voxels": 128433,
+  "inside_ventricle_value": 0.0,
+  "edt": "scipy.ndimage.distance_transform_edt(~vent, sampling=voxel spacing), full 3D volume",
+  "normalization": "min(d, D_max) / D_max",
+  "pv_threshold_mm": 10.0,
+  "total_abwmh_voxels_inside_vent_mask": 7,
+  "qc_png_patients": [
+    "029",
+    "044",
+    "089",
+    "028",
+    "008",
+    "040",
+    "087",
+    "065",
+    "067",
+    "055"
+  ],
+  "script": "15a_make_ventricle_distance.py"
+}

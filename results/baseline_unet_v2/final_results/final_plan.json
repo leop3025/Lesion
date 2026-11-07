@@ -1,0 +1,95 @@
+{
+  "model_name": "Baseline U-Net v2",
+  "use_distance": false,
+  "context_slices": 1,
+  "in_channels": 9,
+  "channel_order": [
+    "T1_z-1",
+    "T2_z-1",
+    "FLAIR_z-1",
+    "T1_z+0",
+    "T2_z+0",
+    "FLAIR_z+0",
+    "T1_z+1",
+    "T2_z+1",
+    "FLAIR_z+1"
+  ],
+  "tta": "flip (none, LR, UD, both), softmax mean",
+  "postprocessing": "remove 26-connected components of labels [3, 4] smaller than N voxels; N chosen on pooled CV from [0, 2, 3, 5, 8, 10, 15, 20, 30, 50]",
+  "class_names": [
+    "background",
+    "ventricle",
+    "normal_wmh",
+    "pv_abnormal_wmh",
+    "deep_abnormal_wmh"
+  ],
+  "eval_targets": {
+    "ventricle": [
+      1
+    ],
+    "normal_wmh": [
+      2
+    ],
+    "pv_abnormal_wmh": [
+      3
+    ],
+    "deep_abnormal_wmh": [
+      4
+    ],
+    "abnormal_wmh": [
+      3,
+      4
+    ],
+    "all_wmh": [
+      2,
+      3,
+      4
+    ]
+  },
+  "selection_target": "abnormal_wmh",
+  "selection_rule": "mean per-patient 3D Dice over val patients with GT",
+  "epochs": 120,
+  "batch_size": 8,
+  "lr": 0.0001,
+  "weight_decay": 1e-05,
+  "lr_scheduler_cv": "CosineAnnealingLR(T_max=120, eta_min=1e-06), start lr=0.0001, stepped once per epoch",
+  "lr_scheduler_final": "CosineAnnealingLR(T_max=86, eta_min=1e-06), start lr=0.0001, stepped once per epoch",
+  "seed": 20260911,
+  "seed_rule": "RANDOM_SEED + fold (final model: RANDOM_SEED, as script 14)",
+  "dice_loss": "batch-level soft Dice, smooth=1.0, background excluded",
+  "class_weight_power": 0.5,
+  "augmentation": {
+    "spatial": "h-flip, v-flip, rot90 on all channels + label",
+    "intensity": "scale/shift on MRI channels (all context slices), brain voxels only"
+  },
+  "split_root": "C:\\Users\\Preethi\\Documents\\LESION\\splits\\baseline_2d",
+  "label_root": "C:\\Users\\Preethi\\Documents\\LESION\\six_class_masks",
+  "cv_best_epochs": [
+    87,
+    86,
+    65,
+    85,
+    111
+  ],
+  "final_epochs": 86,
+  "epoch_rule": "median of 5 CV best epochs, fixed before test evaluation",
+  "lr_schedule_rule": "final model anneals over its own final_epochs (T_max=final_epochs); CV folds used T_max=EPOCHS",
+  "postprocessing_min_voxels": 0,
+  "postprocessing_rule": "chosen on pooled CV before test; primary test result = with post-processing",
+  "class_voxel_counts": [
+    73344295,
+    290811,
+    84861,
+    78867,
+    49566
+  ],
+  "class_weights": [
+    0.04338676854968071,
+    0.6890251636505127,
+    1.275517463684082,
+    1.3231004476547241,
+    1.6689701080322266
+  ],
+  "n_dev_patients": 70,
+  "n_test_patients": 30
+}
