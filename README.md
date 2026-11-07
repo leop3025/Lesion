@@ -113,7 +113,7 @@ The repository holds code, summary metrics and aggregate plots only. These are *
 - full training logs
 - per-patient prediction images
 
-The MS3SEG dataset must be obtained from its original source.
+The MS3SEG dataset must be taken from its original source.
 
 ```
 results/
