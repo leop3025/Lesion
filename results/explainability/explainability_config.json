@@ -1,0 +1,120 @@
+{
+  "models": {
+    "baseline_unet_v2": "14_train_baseline_unet_v2.py",
+    "distance_unet_v2": "17_distance_map_unet_v2.py"
+  },
+  "test_set": "30 locked test patients; final 70-patient models; no training or tuning",
+  "prediction": "TTA and post-processing exactly as in scripts 14/17 (imported)",
+  "ablation_conditions": [
+    "intact",
+    "no_FLAIR",
+    "no_T2",
+    "no_T1",
+    "no_neighbour_slices",
+    "dist_zero (distance model; unusual-input stress test, NOT a 'no distance information' condition)",
+    "dist_counterfactual (distance model)"
+  ],
+  "ablation_zero_value": "0 = mean brain intensity of z-scored MRI (and background)",
+  "dist_counterfactual": {
+    "name": "anatomically controlled counterfactual distance-map perturbation (not a clinically validated anatomical replacement)",
+    "space_check": "patients are in individual native FLAIR spaces (script 10: per-patient reference grid, intra-patient registration only); equal array shapes are not treated as aligned",
+    "donor_pool": "70 development patients (never test patients)",
+    "donor_ranking": "z-scored ventricle features ['vent_volume_ml', 'vent_centroid_rel_brain_x_mm', 'vent_centroid_rel_brain_y_mm', 'vent_centroid_rel_brain_z_mm', 'vent_spread_x_mm', 'vent_spread_y_mm', 'vent_spread_z_mm']; up to 5 nearest candidates tried in order",
+    "registration": "donor brain -> target brain, axis-aligned affine in world mm (centroid translation + per-axis scaling by brain spread); ventricle mask resampled with nearest neighbour; voxels outside the target brain removed",
+    "plausibility_checks": {
+      "min_brain_dice": 0.85,
+      "scale_range": [
+        0.75,
+        1.33
+      ],
+      "vent_volume_ratio": [
+        0.3333333333333333,
+        3.0
+      ],
+      "min_fraction_inside_brain": 0.95,
+      "centroid_inside_brain": true
+    },
+    "distance": "recomputed as in 15a: 3D EDT in mm on the target grid, clip at D_max, / D_max",
+    "affected_voxels": "target-brain voxels outside both ventricle masks whose 10 mm PV/deep assignment differs between original and counterfactual distance",
+    "metrics": {
+      "cf_follows_geometry_change": "AGREEMENT of the counterfactual prediction with the new geometry (affected voxels predicted abnormal in both runs); includes labels that were already consistent with it",
+      "cf_switch_fraction": "fraction of those voxels whose label changed between runs",
+      "cf_switch_consistent": "fraction whose label switched from the true-geometry label to the counterfactual-geometry label (primary counterfactual metric)"
+    },
+    "cf_metrics_computed_for": [
+      "intact",
+      "dist_counterfactual"
+    ],
+    "skipping": "no suitable donor -> target skipped and reported in counterfactual_skipped.csv",
+    "limitation": "low-DOF registration; no deformable registration (e.g. ANTs SyN) is used"
+  },
+  "pv_threshold_mm": 10.0,
+  "distance_bands_mm": [
+    [
+      0.0,
+      5.0
+    ],
+    [
+      5.0,
+      10.0
+    ],
+    [
+      10.0,
+      20.0
+    ],
+    [
+      20.0,
+      35.0
+    ],
+    [
+      35.0,
+      "inf"
+    ]
+  ],
+  "distance_band_label_accuracy": "PV/deep label accuracy among correctly detected abnormal voxels per band; paired distance - baseline difference, Wilcoxon + Holm across bands",
+  "integrated_gradients": {
+    "steps": 64,
+    "baseline": "all zeros (DIST = 0 = at the ventricle; DIST shares are therefore not comparable between PV and deep classes)",
+    "score": "sum of softmax prob of the target class over the model's own predicted region",
+    "region": "single forward pass, no TTA, no post-processing",
+    "slice": "per patient, the slice with most GT abnormal WMH",
+    "min_region_voxels": 5
+  },
+  "ig_quality_flags": {
+    "completeness_tolerance": 0.05,
+    "min_score_delta": 0.001
+  },
+  "uncertainty": {
+    "entropy": "normalised entropy of the TTA-mean softmax (total predictive uncertainty)",
+    "mutual_info": "H(mean) - mean H(flip), normalised (TTA disagreement)",
+    "disagreement": "fraction of TTA flips whose argmax differs from the final label",
+    "error_definition": "abnormal-WMH detection errors (FP/FN); PV<->deep confusions count as correct",
+    "error_detection": "AUROC for FP/FN vs correct voxels, (a) whole brain, (b) lesion ROI = (GT | predicted abnormal) dilated in-plane by 3 voxels"
+  },
+  "rule_based": {
+    "definition": "each model's saved prediction with abnormal voxels relabelled PV/deep by the 10 mm rule on the expert-mask distance map",
+    "comparisons": [
+      "distance model minus baseline + 10 mm rule",
+      "baseline + 10 mm rule minus baseline",
+      "distance model + 10 mm rule minus distance model"
+    ],
+    "statistics": "paired Wilcoxon over patients, Holm across all comparisons, bootstrap CI"
+  },
+  "ground_truth_dependencies": [
+    "distance channel computed from the EXPERT ventricle mask, also for test patients (script 17)",
+    "the 10 mm rule in the rule-based comparison uses the same expert-mask distance map",
+    "GT labels used only for fixed slice / example selection and for evaluation, never as input"
+  ],
+  "reproducibility_check": "intact predictions must match saved test predictions (max voxel mismatch 0.0001)",
+  "figure_dpi": 300,
+  "bootstrap": {
+    "n": 5000,
+    "seed": 20260911,
+    "ci": "95% percentile, over patients"
+  },
+  "references": [
+    "Sundararajan et al., ICML 2017 (Integrated Gradients)",
+    "Wang et al., Neurocomputing 2019 (TTA uncertainty)",
+    "Griffanti et al., NeuroImage 2018 (10 mm periventricular rule)"
+  ]
+}
