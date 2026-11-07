@@ -1,0 +1,32 @@
+{
+  "classes": {
+    "0": "Background",
+    "1": "Ventricle",
+    "2": "Normal WMH",
+    "3": "PV Abnormal WMH",
+    "4": "Deep Abnormal WMH"
+  },
+  "pv_rule": "0 <= d <= 10.0 mm (raw 3D distance to ventricle mask)",
+  "deep_rule": "d > 10.0 mm",
+  "pv_deep_split_applies_to": "abnormal WMH only",
+  "overlap_priority": "ventricle < nWMH < abWMH (later overwrites earlier)",
+  "distance_source": "distance_map/<id>/<id>_VentDist_mm.nii.gz",
+  "voxel_totals": {
+    "c0_Background": 104283524,
+    "c1_Ventricle": 421731,
+    "c2_Normal_WMH": 122097,
+    "c3_PV_Abnormal_WMH": 111818,
+    "c4_Deep_Abnormal_WMH": 67330,
+    "nwmh_abwmh_overlap": 185,
+    "nwmh_in_vent": 2,
+    "abwmh_in_vent": 7
+  },
+  "patients_with_class": {
+    "Background": 100,
+    "Ventricle": 100,
+    "Normal WMH": 100,
+    "PV Abnormal WMH": 100,
+    "Deep Abnormal WMH": 100
+  },
+  "script": "15b_make_six_class_masks.py"
+}

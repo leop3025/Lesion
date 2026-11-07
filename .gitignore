@@ -28,3 +28,6 @@ __pycache__/
 
 # VS Code
 .vscode/
+
+# Patient image previews (QC slices)
+distance_map/**/*.png
